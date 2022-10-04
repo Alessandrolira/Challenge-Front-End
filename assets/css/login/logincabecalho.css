@@ -1,0 +1,41 @@
+.logincabecalho {
+  display: flex;
+  margin: 2em 1em;
+  justify-content: space-between;
+}
+
+.logincabecalho__busca {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .logincabecalho {
+    justify-content: left;
+  }
+  .logincabecalho__lupa{
+    display: none;
+  }
+
+  .cabecalho__logo {
+    margin-left: 2em;
+  }
+
+  .logincabecalho__busca {
+    display: block;
+    margin-left: 4em;
+    background: var(--cinza-fundo);
+    border: 0px solid white;
+    padding: 0.7em 10em 0.7em 1em;
+    border-radius: 3em;
+    
+    background-image: url(/assets/img/lupa-pesquisa.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position: 90%;
+  }
+
+  .logincabecalho__busca::placeholder {
+    color: var(--cinza-claro);
+    font-weight: 400;
+  }
+}

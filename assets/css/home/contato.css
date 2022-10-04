@@ -1,0 +1,135 @@
+.contato {
+  background: var(--azul-fundo);
+  padding: 2em;
+}
+
+.contato__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-controle {
+  width: 40px;
+  margin-right: 0.3em;
+}
+
+.logo-texto {
+  width: 63px;
+}
+
+.contato__lista {
+  margin-top: 2em;
+  text-align: center;
+}
+
+.contato__item {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 1em;
+}
+
+.mensagem {
+  display: flex;
+  flex-direction: column;
+}
+
+.contato__mensagem {
+  color: var(--cinza);
+  margin-top: 2em;
+  margin-bottom: 0.5em;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.contato__mensagem-nome, .contato__mensagem-texto {
+  margin-bottom: 1em;
+  border: 0px solid ;
+  border-radius: 0.4em;
+  padding-left: 1em;
+  font-family: "Raleway";
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.contato__mensagem-nome {
+  height: 3em;
+  text-align: bottom;
+}
+
+.contato__mensagem-nome::placeholder, .contato__mensagem-texto::placeholder {
+  position: absolute;
+  top: 0.5em;
+  font-size: 12px;
+  font-weight: 400;
+  font-family: "Raleway";
+}
+
+.contato__mensagem-texto::placeholder {
+  font-size: 16px;
+}
+
+.contato__mensagem-texto {
+  height: 4em;
+  word-wrap: wrap;
+}
+
+.contato__botao {
+  background: var(--azul);
+  border: none;
+  color: var(--branco);
+  padding: 1em 2em;
+  width: 50%;
+  font-family: 'Raleway';
+}
+
+@media screen and (min-width: 768px) {
+  .contato {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .contato__container {
+    width: 50%;
+  }
+
+  .contato__logo {
+    display: block;
+  }
+
+  .contato__lista {
+    text-align: left;
+  }
+
+  .mensagem {
+    width: 50%;
+  }
+
+  .contato__mensagem {
+    margin-top: 0;
+  }
+
+  .contato__botao {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contato {
+    padding: 4em 8em;
+    justify-content: space-between;
+  }
+
+  .contato__container {
+    display: flex;
+  }
+
+  .contato__logo {
+    margin-right: 5em;
+  }
+
+  .contato__lista {
+    margin-top: 0;
+  }
+  
+}

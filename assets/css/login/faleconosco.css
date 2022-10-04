@@ -1,0 +1,27 @@
+.faleconosco {
+  padding: 1.5em;
+  background: var(--azul-fundo);
+}
+
+.faleconosco__titulo {
+  font-weight: 700;
+  margin-bottom: 1em;
+}
+
+.faleconosco__nome, .faleconosco__mensagem {
+  padding: 1em;
+  color: var(--cinza);
+  font-weight: 'Raleway';
+  border: none;
+  width: 90%;
+}
+
+.faleconosco__mensagem {
+  margin-top: 1em;
+  padding-bottom: 4em;
+}
+
+.faleconosco__nome::placeholder, .faleconosco__mensagem::placeholder {
+  font-family: 'Raleway';
+  font-weight: 400;
+}

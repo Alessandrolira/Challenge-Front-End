@@ -1,0 +1,30 @@
+.paginaProdutos {
+  padding: 1em 1.5em;
+  background: var(--cinza-fundo);
+  display: flex;
+  flex-direction: column;
+}
+
+.paginaProdutos__titulo {
+  margin: 0.8em 0 0.5em 0;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.paginaProduto__botao {
+  background: var(--azul);
+  border: none;
+  color: var(--branco);
+  font-family: 'Raleway';
+  padding: 1em 0.8em;
+  margin-bottom: 1em;
+}
+
+.paginaProdutos__grade {
+  display: grid;
+  grid-template-columns: 45% 45%;
+}
+
+.teste {
+  display: none;
+}

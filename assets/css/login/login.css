@@ -1,0 +1,49 @@
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--cinza-fundo);
+  padding: 5em 1em;
+}
+
+.login__titulo {
+  font-weight: 700;
+  font-size: 16px;
+  margin: 0.5em;
+}
+
+.login__email, .login__senha {
+  width: 70%;
+  margin: 0.5em;
+  padding: 0.8em;
+  border: 0px solid white;
+  border-radius: 0.5em;
+}
+
+.login__email::placeholder, .login__senha::placeholder {
+  font-family: 'Raleway';
+  font-weight: 400;
+
+  color: var(--cinza-claro);
+}
+
+.login__botao {
+  background: var(--azul);
+  color: var(--branco);
+  border: none;
+  padding: 0.8em 2em;
+  margin-top: 1em;
+
+  font-size: 12px;
+  font-family: 'Raleway';
+}
+
+@media screen and (min-width: 768px) {
+  .login__email, .login__senha {
+    width: 30%;
+  }
+
+  .login__botao {
+    width: 33%;
+  }
+}
